@@ -4,7 +4,7 @@ using System.Text;
 
 namespace IntappCodingExe
 {
-    public class AlphaVantage: IComparable<AlphaVantage>
+    public class AlphaVantage
     {
         public DateTime timestamp;
         public decimal open;
@@ -12,7 +12,6 @@ namespace IntappCodingExe
         public decimal low;
         public decimal close;
         public decimal volume;
-        public int CompareTo(AlphaVantage other) { return close.CompareTo(other.close); }
 
         public static AlphaVantage FromCsv(string csvLine)
         {
